@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="104" id="KGk-i7-Jjw" customClass="GenderCell" customModule="Surface" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="104"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="104"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gender" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PEX-IO-nuO">
+                        <rect key="frame" x="16" y="11" width="118" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.40088633630494147" green="0.40286044973544977" blue="0.3870410930176385" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="4SG-sa-Qls">
+                        <rect key="frame" x="16" y="51" width="93" height="30"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O8W-94-LHu">
+                                <rect key="frame" x="0.0" y="0.0" width="33" height="30"/>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="15"/>
+                                <state key="normal" title="Male">
+                                    <color key="titleColor" red="0.44353141214776398" green="0.44571552579365081" blue="0.4282133537590746" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lJZ-ed-NZh">
+                                <rect key="frame" x="43" y="0.0" width="50" height="30"/>
+                                <state key="normal" title="Female">
+                                    <color key="titleColor" red="0.098514547039845551" green="0.098999669312169303" blue="0.095112191440308233" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="PEX-IO-nuO" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="11" id="Mfi-QA-Tus"/>
+                    <constraint firstItem="PEX-IO-nuO" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="bl7-70-8CF"/>
+                    <constraint firstItem="4SG-sa-Qls" firstAttribute="leading" secondItem="PEX-IO-nuO" secondAttribute="trailing" constant="-118" id="cVU-yA-w3u"/>
+                    <constraint firstAttribute="bottom" secondItem="4SG-sa-Qls" secondAttribute="bottom" constant="22.5" id="dFN-4r-zGg"/>
+                    <constraint firstItem="4SG-sa-Qls" firstAttribute="leading" secondItem="PEX-IO-nuO" secondAttribute="leading" id="yan-BK-15c"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="femaleBtn" destination="lJZ-ed-NZh" id="paj-iE-QXk"/>
+                <outlet property="genderLabel" destination="PEX-IO-nuO" id="alU-Fc-9p0"/>
+                <outlet property="maleBtn" destination="O8W-94-LHu" id="eEi-kY-ira"/>
+            </connections>
+            <point key="canvasLocation" x="161" y="-29"/>
+        </tableViewCell>
+    </objects>
+</document>

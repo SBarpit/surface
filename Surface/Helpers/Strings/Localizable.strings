@@ -1,0 +1,118 @@
+/* 
+  Localizable.strings
+  ArchievZ
+
+  Created by Appinventiv on 05/01/18.
+  Copyright © 2018 Appinventiv. All rights reserved.
+*/
+
+"no_internet"="No internet connection available!";
+
+//Login/Signup Screen
+
+//Error Messages
+"k_Empty_email"       = "Please enter e-mail address.";
+"k_Valid_email_war"   = "Please enter valid e-mail.";
+"k_Empty_pwd_war"     = "Please enter a password.";
+"k_Pwd_length_war"    = "Password must be atleast 6 digits long.";
+"k_username_length_war" = "Username must be atleast 3 characters long.";
+"k_Empty_phone_war"   = "Please enter phone number.";
+"k_Empty_username_war" = "Please enter username.";
+"k_Mob_no_8_digit"    = "Please enter a valid phone number.";
+"k_Empty_login_email" = "Please enter email or phone number or username to login.";
+"k_accept_terms_condition" = "Please accept terms and conditions";
+
+"K_empty_conf_pwd"      = "Please enter confirm password.";
+"K_empty_New_pwd"       = "Please enter new password.";
+"K_pwd_mismatch"        = "New password and confirm password must be same.";
+"k_valid_pin"           = "Please provide valid pin";
+"k_empty_country_Code"  = "Please select country code";
+
+"k_username_Exixts"     = "Username is already registered.";
+"k_phone_number_Exists" = "Phone number is already registered.";
+"k_email_Exists"        = "Email is already registered.";
+
+// Plaseholder's Text
+"k_userOrEmail"       = "Username /Email/ Phone Number";
+"k_login"             = "Log In";
+"k_ForgotPwd"         = "Forgot password?";
+"k_Dont_HaveAccount"  = "Don't have an account? ";
+"k_Signup"            = "Sign Up";
+"k_Already_Account"   = "Already have an account? ";
+"k_Email"             = "Email";
+"k_Phone_Num"           = "Phone Number";
+"k_password"            = "Password";
+"k_User_image"          = "user_image";
+"k_username"            = "Username";
+"k_termsAndCondi"       = "Terms and Conditions";
+"k_privacy_Policy"      = "Privacy Policy";
+"K_Confirm_Pwd"         = "Confirm Password";
+"K_New_Pwd"             = "New Password";
+"K_Search_country"      = "Search Country";
+"K_Country_code"        = "Country code";
+"k_Discard_image_desc"  = "If you go back now, your progress will be discarded.";
+"k_Discard_image_title" = "Discard Photo?";
+
+// forgot/reset password success Message
+"k_resetPwd_Success_Msg"        = "You have successfully reset your password";
+"k_resetPwd_link_Success_msg"   = "Reset password link has been sent on your registered email address";
+"k_username_sent_suceess_msg"   = "Username has been sent on your registered email address.";
+"k_Otp_sent_on_mobile_success_msg"  = "An OTP has been sent on your mobile number.";
+
+// OTP Screen
+"k_Otp_sent_on"     = "Please enter the OTP we sent on ";
+
+// Popup Messages Logout/ Camera etc.
+"k_Settings"            = "Settings";
+"k_Cancel"              = "Cancel";
+"k_Error"               = "Error";
+"k_Logout"              = "Do you want to log out?";
+"k_Yes"                 = "Yes";
+"k_No"                  = "No";
+"k_OK"                  = "Ok";
+"k_discard"             = "Discard";
+"k_Keep"                = "Cancel";
+"k_Discard_video_desc"  = "If you go back now, your progress will be discarded.";
+"k_Discard_video_title" = "Discard Video?";
+"k_descrip_placeholder" = "Write Description";
+"k_Refresh"             = "Refresh";
+"k_no_Interent"         = "No ineternet connection";
+"k_Delete_post"         = "Delete Post?";
+"k_Delete_post_message" = "Do you want to delete this post?";
+"k_Update"              = "Update";
+"k_first_record_video"  = "First record your video.";
+"k_SharetoTwitter"      = "Share to Twitter";
+"k_CopyLink"            = "Copy Link";
+"k_SharetoFacebook"     = "Share to Facebook";
+"k_Edit"                = "Edit";
+"k_Delete"              = "Delete";
+"k_TurnonPostNotifications" = "Turn on Post Notifications";
+"k_Report"                  = "Report";
+
+// Home Screen
+
+// For permission / And Camera
+"k_AccessCamera"    = "You are not allowed to access the camera. Access your device settings and enable camera permissions.";
+"k_AccessPhotos"    = "You are not allowed to access photos. Go to your device settings and enable photo permissions.";
+"k_tourch_not_Avail"       = "Torch is not available";
+"k_error_In_Torch_mode"    = "Error in setting of torch mode";
+"k_video_maxLenght_error"  = "Video record duration can not be longer than 1 minute";
+
+//Key for Webservices
+// Login
+"k_Access_token"            = "access_token";
+"k_Country_code"            = "country_code";
+"k_Mobile"                  = "mobile";
+"k_Otp_code"                = "otp";
+"k_user_name"               = "user_name";
+"k_user_email"              = "email";
+"k_user_uid"                = "uid";
+"k_user_Id"                 = "user_id";
+
+
+//ProfileSection
+//==============
+"k_EditProfile_Btn"         = "Edit Profile";
+
+
+

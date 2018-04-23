@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Poppins-Regular.ttf">
+            <string>Poppins-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="writeCommentCell" rowHeight="181" id="KGk-i7-Jjw" customClass="writeCommentCell" customModule="Surface" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="502" height="181"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="502" height="180.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wnt-cl-Y34" userLabel="postCommentButton">
+                        <rect key="frame" x="430" y="68" width="45" height="45"/>
+                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="45" id="YVs-M8-Rsl"/>
+                            <constraint firstAttribute="width" constant="45" id="cG8-Sm-7K7"/>
+                        </constraints>
+                        <state key="normal" image="icFeaturedPostCommentSend"/>
+                    </button>
+                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Enter your coDvXVXVvSDvsvsdvsdvsdvdsvsadvdsvsdv vv vbxcv  vcmmentEnter your coDvXVXVvSDvsvsdvsdvsdvdsvsadvdsvsdv vv vbxcv  " translatesAutoresizingMaskIntoConstraints="NO" id="GkX-su-0wZ">
+                        <rect key="frame" x="30" y="54.5" width="335" height="72.5"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="72.5" id="NIJ-jD-fqr"/>
+                            <constraint firstAttribute="height" constant="72.5" id="SmC-1o-LKr"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="13.5"/>
+                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                        <dataDetectorType key="dataDetectorTypes" link="YES"/>
+                    </textView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2Hr-xp-mqD">
+                        <rect key="frame" x="5" y="29" width="492" height="0.5"/>
+                        <color key="backgroundColor" red="0.7019608021" green="0.7019608021" blue="0.7019608021" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="0.5" id="4KV-jI-uCR"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xmT-g0-3IK">
+                        <rect key="frame" x="5" y="151.5" width="492" height="0.5"/>
+                        <color key="backgroundColor" red="0.7019608021" green="0.7019608021" blue="0.7019608021" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="0.5" id="bA0-rz-Wiv"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="wnt-cl-Y34" firstAttribute="leading" secondItem="GkX-su-0wZ" secondAttribute="trailing" constant="65" id="9Wd-OK-cny"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="2Hr-xp-mqD" secondAttribute="trailing" constant="-15" id="9fM-cd-gvz"/>
+                    <constraint firstItem="GkX-su-0wZ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="10" id="Kmx-Lh-JeO"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="xmT-g0-3IK" secondAttribute="bottom" constant="18" id="LlA-b7-exh"/>
+                    <constraint firstItem="2Hr-xp-mqD" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="18" id="Per-Di-6rX"/>
+                    <constraint firstItem="GkX-su-0wZ" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="WUH-Pf-fCN"/>
+                    <constraint firstItem="GkX-su-0wZ" firstAttribute="height" relation="greaterThanOrEqual" secondItem="H2p-sc-9uM" secondAttribute="height" multiplier="73/181" id="cvA-jD-b9v"/>
+                    <constraint firstItem="2Hr-xp-mqD" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="-15" id="el8-bq-keL"/>
+                    <constraint firstItem="wnt-cl-Y34" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="goL-wU-x0P"/>
+                    <constraint firstItem="xmT-g0-3IK" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="-15" id="ie8-yI-HC1"/>
+                    <constraint firstItem="wnt-cl-Y34" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" constant="-7" id="kJ5-bq-dxZ"/>
+                    <constraint firstItem="xmT-g0-3IK" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" constant="15" id="qbZ-rv-ciR"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="commentTextField" destination="GkX-su-0wZ" id="1O9-MX-sB1"/>
+                <outlet property="postComment" destination="wnt-cl-Y34" id="ZPk-1C-sb8"/>
+            </connections>
+            <point key="canvasLocation" x="-163" y="6.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="icFeaturedPostCommentSend" width="12" height="10"/>
+    </resources>
+</document>

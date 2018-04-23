@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="AvenirLTStd-Book_0.otf">
+            <string>AvenirLTStd-Book</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="84" id="KGk-i7-Jjw" customClass="AccountManagementCell" customModule="BeautyKingdom" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="84"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="83.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s1y-6H-ZGD">
+                        <rect key="frame" x="26" y="5" width="22" height="22"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="22" id="7PU-WS-XuP"/>
+                            <constraint firstAttribute="height" constant="22" id="VMP-Gt-GWa"/>
+                        </constraints>
+                        <state key="normal" image="icEgiftsUncheckBox"/>
+                        <state key="selected" image="icEgiftsCheckBox"/>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cpy-0F-XkW">
+                        <rect key="frame" x="58" y="5" width="236" height="73.5"/>
+                        <fontDescription key="fontDescription" name="AvenirLTStd-Book" family="Avenir LT Std" pointSize="17"/>
+                        <color key="textColor" red="0.17254901960784313" green="0.17254901960784313" blue="0.17254901960784313" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="cpy-0F-XkW" firstAttribute="leading" secondItem="s1y-6H-ZGD" secondAttribute="trailing" constant="10" id="HfW-3d-jtk"/>
+                    <constraint firstItem="cpy-0F-XkW" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="QEV-X9-Rid"/>
+                    <constraint firstItem="s1y-6H-ZGD" firstAttribute="top" secondItem="cpy-0F-XkW" secondAttribute="top" id="WnU-6Q-iga"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="cpy-0F-XkW" secondAttribute="trailing" constant="10" id="ZCX-oe-iuo"/>
+                    <constraint firstItem="s1y-6H-ZGD" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="10" id="n2p-QZ-E0c"/>
+                    <constraint firstAttribute="bottom" secondItem="cpy-0F-XkW" secondAttribute="bottom" constant="5" id="zGg-Sz-0X9"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="checkBoxButton" destination="s1y-6H-ZGD" id="uVb-Fc-Gpc"/>
+                <outlet property="label" destination="cpy-0F-XkW" id="zzW-CD-7xS"/>
+            </connections>
+            <point key="canvasLocation" x="25" y="72"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="icEgiftsCheckBox" width="30" height="30"/>
+        <image name="icEgiftsUncheckBox" width="30" height="30"/>
+    </resources>
+</document>

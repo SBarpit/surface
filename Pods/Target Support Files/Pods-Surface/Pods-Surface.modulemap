@@ -1,0 +1,6 @@
+framework module Pods_Surface {
+  umbrella header "Pods-Surface-umbrella.h"
+
+  export *
+  module * { export * }
+}

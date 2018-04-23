@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="114" id="KGk-i7-Jjw" customClass="EditProfileButton" customModule="Surface" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="114"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="113.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="StN-rP-w9p">
+                        <rect key="frame" x="0.0" y="5" width="320" height="2"/>
+                        <color key="backgroundColor" red="0.62361199239999998" green="0.62361199239999998" blue="0.62361199239999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="2" id="nIY-jK-GWt"/>
+                        </constraints>
+                    </view>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DE2-iG-MaJ">
+                        <rect key="frame" x="50" y="32" width="220" height="50"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="50" id="Qzc-9q-VxK"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                        <state key="normal" title="Edit Profile">
+                            <color key="titleColor" red="0.25479854060913709" green="0.25479854060913709" blue="0.25479854060913709" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </state>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="StN-rP-w9p" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="1YR-6p-gHp"/>
+                    <constraint firstAttribute="trailing" secondItem="StN-rP-w9p" secondAttribute="trailing" id="2bA-ec-nsw"/>
+                    <constraint firstItem="DE2-iG-MaJ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="50" id="7xZ-jd-a0G"/>
+                    <constraint firstItem="StN-rP-w9p" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="EWB-Ab-gk8"/>
+                    <constraint firstItem="DE2-iG-MaJ" firstAttribute="top" secondItem="StN-rP-w9p" secondAttribute="bottom" constant="25" id="FQ6-2w-56c"/>
+                    <constraint firstItem="DE2-iG-MaJ" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="j38-fp-kO1"/>
+                    <constraint firstAttribute="trailing" secondItem="DE2-iG-MaJ" secondAttribute="trailing" constant="50" id="tfU-ff-NPb"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="editProfileBtn" destination="DE2-iG-MaJ" id="ve5-7i-yqF"/>
+                <outlet property="separatorView" destination="StN-rP-w9p" id="8M5-PR-Y1q"/>
+            </connections>
+            <point key="canvasLocation" x="325" y="84"/>
+        </tableViewCell>
+    </objects>
+</document>

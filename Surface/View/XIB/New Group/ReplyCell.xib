@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Poppins-Light.ttf">
+            <string>Poppins-Light</string>
+        </array>
+        <array key="Poppins-SemiBold.ttf">
+            <string>Poppins-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ReplyCell" rowHeight="119" id="KGk-i7-Jjw" customClass="ReplyCell" customModule="Surface" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="627" height="119"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="627" height="118.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="3yg-me-HES">
+                        <rect key="frame" x="40" y="31" width="56" height="56.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="3yg-me-HES" secondAttribute="height" multiplier="1:1" id="JBl-8b-f9A"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tCA-ae-j7y" userLabel="UserNameLabel">
+                        <rect key="frame" x="112.5" y="24" width="36" height="19"/>
+                        <fontDescription key="fontDescription" name="Poppins-SemiBold" family="Poppins" pointSize="13"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Ow-zS-Ff4" userLabel="ReplyLabel">
+                        <rect key="frame" x="112.5" y="51" width="31.5" height="17"/>
+                        <fontDescription key="fontDescription" name="Poppins-Light" family="Poppins" pointSize="12"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="doq-Me-vXo" userLabel="timeLabel">
+                        <rect key="frame" x="112.5" y="74.5" width="21" height="12"/>
+                        <fontDescription key="fontDescription" name="Poppins-Light" family="Poppins" pointSize="8"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fe2-40-vBV">
+                        <rect key="frame" x="112.5" y="113" width="504.5" height="0.5"/>
+                        <color key="backgroundColor" red="0.7019608021" green="0.7019608021" blue="0.7019608021" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="0.5" id="aEY-Rg-bII"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="fe2-40-vBV" firstAttribute="top" relation="greaterThanOrEqual" secondItem="doq-Me-vXo" secondAttribute="bottom" constant="10" id="6iD-8k-EpA"/>
+                    <constraint firstItem="9Ow-zS-Ff4" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="8pZ-r2-22y"/>
+                    <constraint firstItem="3yg-me-HES" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="9Ub-lQ-dl1"/>
+                    <constraint firstItem="doq-Me-vXo" firstAttribute="leading" secondItem="tCA-ae-j7y" secondAttribute="leading" id="CNM-Bz-ZNC"/>
+                    <constraint firstItem="tCA-ae-j7y" firstAttribute="top" relation="greaterThanOrEqual" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="E9r-dx-Qww"/>
+                    <constraint firstItem="tCA-ae-j7y" firstAttribute="leading" secondItem="3yg-me-HES" secondAttribute="trailing" constant="16.5" id="Hhn-Ji-ndq"/>
+                    <constraint firstItem="9Ow-zS-Ff4" firstAttribute="leading" secondItem="tCA-ae-j7y" secondAttribute="leading" id="QJ4-wj-8aI"/>
+                    <constraint firstItem="doq-Me-vXo" firstAttribute="top" secondItem="9Ow-zS-Ff4" secondAttribute="bottom" constant="6.5" id="Rq9-zv-474"/>
+                    <constraint firstItem="3yg-me-HES" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="40" id="VrF-t2-TtR"/>
+                    <constraint firstItem="fe2-40-vBV" firstAttribute="leading" secondItem="tCA-ae-j7y" secondAttribute="leading" id="Vya-Hu-dpl"/>
+                    <constraint firstAttribute="trailing" secondItem="fe2-40-vBV" secondAttribute="trailing" constant="10" id="Vzy-CR-KqO"/>
+                    <constraint firstItem="9Ow-zS-Ff4" firstAttribute="top" secondItem="tCA-ae-j7y" secondAttribute="bottom" constant="8" id="azK-og-Mt0"/>
+                    <constraint firstItem="3yg-me-HES" firstAttribute="height" secondItem="H2p-sc-9uM" secondAttribute="height" multiplier="37.5/79" id="fuA-hv-3b9"/>
+                    <constraint firstAttribute="bottom" secondItem="fe2-40-vBV" secondAttribute="bottom" constant="5" id="nTU-fJ-NCz"/>
+                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="9Ow-zS-Ff4" secondAttribute="trailing" constant="15" id="taj-ff-6z8"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="commentLabel" destination="9Ow-zS-Ff4" id="ZEL-67-xV3"/>
+                <outlet property="profileImageView" destination="3yg-me-HES" id="GbF-du-dvq"/>
+                <outlet property="timeLabel" destination="doq-Me-vXo" id="EiO-ck-DcY"/>
+                <outlet property="userNameLabel" destination="tCA-ae-j7y" id="YCG-ER-2nw"/>
+            </connections>
+            <point key="canvasLocation" x="-14.5" y="41.5"/>
+        </tableViewCell>
+    </objects>
+</document>
